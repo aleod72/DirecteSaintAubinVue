@@ -12,32 +12,6 @@
       <ion-nav-link router-direction="forward" :component="LoginPage.vue">
         <ion-button class="enabled"> Commencer maintenant </ion-button>
       </ion-nav-link>
-      <!-- <ion-modal
-        trigger="open-modal"
-        :initial-breakpoint="0.7"
-        :breakpoints="[0.7]"
-        handle-behavior="cycle"
-      >
-        <ion-content class="ion-padding">
-          <div class="ion-margin-top">
-            <ion-input
-              label="username"
-              label-placement="floating"
-              fill="solid"
-            ></ion-input>
-            <br />
-            <ion-input
-              label="password"
-              label-placement="floating"
-              fill="solid"
-            ></ion-input>
-            <br />
-            <ion-button @click.prevent="" class="enabled"
-              >Se connecter</ion-button
-            >
-          </div>
-        </ion-content>
-      </ion-modal> -->
     </div>
   </ion-content>
 </template>
