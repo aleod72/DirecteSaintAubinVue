@@ -1,0 +1,7 @@
+{
+  "name": "DirecteSaintAubin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
