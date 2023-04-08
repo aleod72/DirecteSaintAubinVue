@@ -9,9 +9,8 @@
         ></ion-img>
         <h5 class="description">Bienvenue 👋, ceci n'est qu'un affichage ^^</h5>
       </div>
-      <ion-nav-link router-direction="forward" :component="LoginPage.vue">
-        <ion-button class="enabled"> Commencer maintenant </ion-button>
-      </ion-nav-link>
+      <!-- add ion button with route to loginpage with the useRouter of ionic and not href-->
+      <ion-button class="ion-margin-top" href="/login" @click=" $router.push('/login')">Se connecter</ion-button>
     </div>
   </ion-content>
 </template>
@@ -27,10 +26,10 @@ import {
   IonNavLink,
 } from "@ionic/vue";
 import { ref, defineComponent, computed } from "vue";
-import LoginPage from "./LoginPage.vue";
-const loginPage = ref(LoginPage);
+import { useRouter } from "vue-router";
 
 const toastOpened = ref(false);
+const router = useRouter();
 
 function setOpened(value: boolean) {
   toastOpened.value = value;
