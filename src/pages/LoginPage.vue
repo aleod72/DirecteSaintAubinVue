@@ -29,7 +29,6 @@ import {
   IonInput,
   onIonViewDidEnter,
 } from "@ionic/vue";
-
 import { ref } from "vue";
 
 const username = ref("");
